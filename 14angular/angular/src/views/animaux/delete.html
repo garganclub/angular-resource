@@ -1,0 +1,27 @@
+<div>
+	<div class="container">
+		<div class="row centered mt mb">
+			<h2 class="text-center">Suppression de l'animal : {{animal.nom}} ?</h2>
+			<br/><br/>
+			<div class="col-lg-4 col-lg-offset-4 gallery text-center carte">
+				<div class="interieur">
+					<h4 class="titre">{{animal.nom}}</h4>
+					<br/>
+					<div class="row">
+						<div class="col-lg-8 gallery text-left">
+							<p animaux-directive></p>
+							<br/>
+							<button class="formulaire" ng-click="deletePost()">Supprimer</button>
+							<button class="formulaire" ng-click="cancelPost()">Annuler</button>
+						</div>
+						<div class="col-lg-4 gallery text-right">
+							<a href="#/animaux" title="liste"><i class="fa fa-list"></i></a>
+							<a href="#/animaux/id/{{animal.id}}" title="voir"><i class="fa fa-search-plus"></i></a>
+							<a href="#/animaux/edit/{{animal.id}}" title="modifier"><i class="fa fa-edit"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

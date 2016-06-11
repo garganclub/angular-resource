@@ -1,0 +1,26 @@
+<div>
+	<div class="container">
+		<div class="row text-center">
+			<h2 class="text-center">Modification de l'animal : {{objet.nom}}</h2>
+			<br/>
+			<a class="bouton" href="#/animaux/new">Nouvel Enregistrement</a>
+			<br/><br/>
+			<div class="col-lg-4 col-lg-offset-4 text-center carte">
+				<div class="form-adapte">
+					<h4 class="titre">{{objet.nom}}</h4>
+					<br/>
+					<div class="row">
+						<div class="col-lg-9 text-left">
+							<formulaire-directive></formulaire-directive>
+						</div>
+						<div class="col-lg-3 text-right">
+							<a href="#/animaux" title="liste"><i class="fa fa-list"></i></a>
+							<a href="#/animaux/id/{{objet.id}}" title="voir"><i class="fa fa-search-plus"></i></a>
+							<a href="#/animaux/delete/{{objet.id}}" title="supprimer"><i class="fa fa fa-trash"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

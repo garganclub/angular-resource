@@ -1,0 +1,24 @@
+<div>
+	<div class="container">
+		<div class="row centered mt mb">
+			<h2 class="text-center">Présentation de l'animal : {{animal.nom}}</h2>
+			<br/><br/>
+			<div class="col-lg-4 col-lg-offset-4 gallery text-center carte">
+				<div class="interieur">
+					<h4 class="titre">{{animal.nom}}</h4>
+					<br/>
+					<div class="row">
+						<div class="col-lg-8 gallery text-left">
+							<p animaux-directive></p>
+						</div>
+						<div class="col-lg-4 gallery text-right">
+							<a href="#/animaux" title="liste"><i class="fa fa-list"></i></a>
+							<a href="#/animaux/edit/{{animal.id}}" title="modifier"><i class="fa fa-edit"></i></a>
+							<a href="#/animaux/delete/{{animal.id}}" title="supprimer"><i class="fa fa fa-trash"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

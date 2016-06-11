@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Gargan Production</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Plugs CSS -->
+
+    <!-- Custom Fonts -->
+    
+    <!-- Custom CSS -->
+    <link href="css/formulaire.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body id="entete">
+
+<!-- Navigation -->
+	<nav>
+	</nav>
+<!-- Fin Navigation -->
+
+<!-- Entete -->
+	<header class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+					<h1>Nouveau Formulaire</h1>
+			</div>
+		</div>
+	</header>
+<!-- Fin Entete -->
+	<br/>
+<!-- Section 1 -->
+	<section id="section1" class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<form class=".form-style-1" id="formulaire" name="formulaire" action="index.html" method="post">
+					<ul class="form-style-1">
+						<li>
+							<label class="text-left">Identité <span class="required">*</span></label>
+							<select id="civilite" name="civilite" class="field-select input-sm">
+								<option value="civilite">Civilité</option>
+								<option value="monsieur">Monsieur</option>
+								<option value="madame">Madame</option>
+							</select>
+						</li>
+						<li>
+							<input id="nom" name="nom" type="text" class="field-divided input-sm" placeholder="Nom"/>
+							<input id="prenom" name="prenom" type="text" class="field-divided input-sm" placeholder="Prénom"/>
+						</li>
+						<li>
+							<label class="text-left">Coordonnées <span class="required">*</span></label>
+							<input id="adresse" name="adresse" type="text" class="field-long input-sm" placeholder="Adresse"/>
+						</li>
+						<li>
+							<input id="codePostal" name="codePostal" type="text" class="field-divided input-sm" placeholder="Code Postal"/>
+							<input id="ville" name="ville" type="text" class="field-divided input-sm" placeholder="Ville"/>
+						</li>
+						<li>
+							<label class="text-left">Message <span class="required">*</span></label>
+							<textarea name="message" id="message" class="field-long field-textarea"></textarea>
+						</li>
+						<li class="text-right">
+							<input type="submit" value="Valider" class="input-sm"/>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</section>
+<!-- Fin Section 1 -->
+
+<!-- Js -->
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.3.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+	<!-- Plugs Js -->
+	
+	<!-- Tunes Js -->
+	<script src="js/fonctions.js"></script> <!-- Fonctions JS -->
+	
+	<!-- Start Js -->
+	<script src="js/lancement.js"></script> <!-- Main JS -->
+<!-- Fin Js -->
+
+</body>
+
+</html>

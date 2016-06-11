@@ -1,0 +1,36 @@
+<div>
+	<div class="container">
+		<div class="row text-center">
+			<h2>Liste des animaux</h2>
+			<br/>
+			<a class="bouton" href="#/animaux/new">Nouvel Enregistrement</a>
+			<form class="selecteur">
+				<span class="etiquette"> Filtre : </span>
+				<select name="filtreClasses" ng-model="filtreClasses" ng-change="filtre()">
+					<option selected value="Aucun">Aucun</option>
+					<option value="Mammifères">Mammifères</option>
+					<option value="Oiseaux">Oiseaux</option>
+					<option value="Reptiles">Reptiles</option>
+					<option value="Insectes">Insectes</option>
+				</select>
+			</form>
+			<br/><br/>
+			<div class="col-lg-4 gallery text-center carte" ng-repeat="animal in animaux">
+				<div class="interieur">
+					<h4 class="titre">{{animal.nom}}</h4>
+					<br/>
+					<div class="row">
+						<div class="col-lg-8 gallery text-left">
+							<p animaux-directive></p>
+						</div>
+						<div class="col-lg-4 gallery text-right">
+							<a href="#/animaux/id/{{animal.id}}" title="voir"><i class="fa fa-search-plus"></i></a>
+							<a href="#/animaux/edit/{{animal.id}}" title="modifier"><i class="fa fa-edit"></i></a>
+							<a href="#/animaux/delete/{{animal.id}}" title="supprimer"><i class="fa fa fa-trash"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

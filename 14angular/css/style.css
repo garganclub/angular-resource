@@ -1,0 +1,79 @@
+*::selection {
+background:#337ab7;
+color:#ffffff;
+}
+
+*::-moz-selection {
+background:#337ab7;
+color:#ffffff;
+}
+
+*::-webkit-selection {
+background:#337ab7;
+color:#ffffff;
+}
+.carte > .interieur {
+	padding: 30px;
+	margin: 10px;
+	border: 5px solid #337ab7;
+}
+.carte > .form-adapte {
+	padding: 20px;
+	margin: 10px;
+	border: 5px solid #337ab7;
+}
+.formulaire span {
+	white-space: nowrap;
+}
+.titre {
+	color: #337ab7;
+}
+.formulaire label,
+.formulaire input[type="text"] {
+	display: block;
+}
+.formulaire input[type="submit"],
+button.formulaire{
+	color: #ffffff;
+	background: #337ab7;
+	border: none;
+	padding: 8px;
+}
+select {
+	height: 33px;
+	position: relative;
+	top: 1px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+}
+select:hover {
+	cursor:pointer;
+}
+form.selecteur {
+	display: inline-block;
+}
+.formulaire input[type="submit"]:hover,
+button.formulaire:hover {
+	background: #000000;
+}
+a.bouton,
+span.etiquette {
+	padding: 8px;
+	color: #ffffff;
+	background: #337ab7;
+}
+a.bouton:hover {
+	background: #000000;
+	text-decoration: none;
+}
+:focus {outline:none !important;}
+::-moz-focus-inner {border:0 !important;}
